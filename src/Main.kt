@@ -1,14 +1,38 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+    println("Please enter a number: ")
+    var word = readln()
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
+    for (char in word) {
+        when (char) {
+            'a', 'b', 'c', 'A', 'B', 'C' -> {
+                print("2")
+            }
+            'd', 'e', 'f', 'D', 'E', 'F' -> {
+                print("3")
+            }
+            'g', 'h', 'i', 'G', 'H', 'I' -> {
+                print("4")
+            }
+            'j', 'k', 'l', 'J', 'K', 'L' -> {
+                print("5")
+            }
+            'm', 'n', 'o', 'M', 'N', 'O' -> {
+                print("6")
+            }
+            'p', 'q', 'r', 's', 'P', 'Q', 'R', 'S' -> {
+                print("7")
+            }
+            't', 'u', 'v', 'T', 'U', 'V' -> {
+                print("8")
+            }
+            'w', 'x', 'y', 'z', 'W', 'X', 'Y', 'Z' -> {
+                print("9")
+            }
+            else -> {
+                print("$char")
+            }
+        }
     }
 }
